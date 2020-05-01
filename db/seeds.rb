@@ -9,7 +9,7 @@
 Comment.destroy_all
 User.destroy_all
 Post.destroy_all
-
+Friend.destroy_all
 
 user1 = User.create(username: "richardbobo", fullname: "Richard Bobo", bio: "I love dogs.")
 user2 = User.create(username: "dawitgizaw", fullname: "Dawit Gizaw", bio: "I am an animal lover")
@@ -17,6 +17,18 @@ user3 = User.create(username: "carolbaskin", fullname:"Carol Baskin", bio: "I lo
 user4 = User.create(username: "joeexotic", fullname:"Joe Exotic", bio:"I love cats and hate Carole Baskin.")
 user5 = User.create(username: "danny2thumbs", fullname: "Danny Succar", bio: "Free Joe Exotic!")
 user6 = User.create(username: "BretHitmanHart", fullname: "Bret Gibson", bio: "I'm a sharpshooter")
+
+# richard is following dawit
+friend1 = Friend.create(follower_id: user1.id, follow_id: user2.id) 
+# dawit is following carol baskin
+friend2 = Friend.create(follower_id: user2.id, follow_id: user3.id)
+# carol baskin is following joe exotic
+friend3 = Friend.create(follower_id: user3.id, follow_id: user4.id)
+# carol baskin is following Danny
+friend4 = Friend.create(follower_id: user3.id, follow_id: user5.id)
+
+
+
 
 
 # Can come back later to change post text.

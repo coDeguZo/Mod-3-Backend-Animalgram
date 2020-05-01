@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 
     def index
         # users = User.all
-        render json: User.all.as_json(:include => :posts )
+        render json: User.all.as_json(:include => [:posts, :followed, :followers])
     end 
 
     def show   

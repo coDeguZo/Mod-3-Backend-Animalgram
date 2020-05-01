@@ -3,6 +3,7 @@ class PostsController < ApplicationController
         def index
             render json: Post.all.as_json(:include => [:comments, :user])
         end 
+
         def show
             post = Post.find_by(id: params[:id])
             render json: post, include: [:comments]
@@ -10,7 +11,7 @@ class PostsController < ApplicationController
 
         def create
             post = Post.create(post_params)
-            render json: post, include: :comments
+            render json: post, include: [:comments, :user]
         end 
 
         def destroy
