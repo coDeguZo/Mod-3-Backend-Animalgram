@@ -7,7 +7,7 @@ class UsersController < ApplicationController
 
     def show   
         user = User.find(params[:id])
-        render json: user.as_json(:include => :posts )
+        render json: user.as_json(:include => [:posts, :followed, :followers] )
     end 
     
     def create
