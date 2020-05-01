@@ -1,7 +1,12 @@
 class CommentsController < ApplicationController
 
     def index 
-        render json: Comment.all
+        render json: Comment.all.to_json(include: :user)
+    end
+
+    def show
+        comment = Comment.find_by(id: params[:id])
+        render json: comment, include: [:user]
     end
 
     def create
