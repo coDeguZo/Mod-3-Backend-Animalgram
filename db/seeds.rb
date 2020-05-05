@@ -60,3 +60,10 @@ comment9 = Comment.create(user_id: user3.id, post_id: post5.id, comment_text: "l
 comment10 = Comment.create(user_id: user4.id, post_id: post4.id, comment_text: "When did you take this photo? " )
 comment11 = Comment.create(user_id: user5.id, post_id: post3.id, comment_text: "love it!" )
 comment12 = Comment.create(user_id: user6.id, post_id: post2.id, comment_text: "eh... my pet is cuter." )
+
+
+#a few aniaml support organizations
+org1 = Organization.create(name: "People for the Ethical Treatment of Animals", website: "www.peta.org", description: "People for the Ethical Treatment of Animals is an American animal rights organization based in Norfolk, Virginia, and led by Ingrid Newkirk, its international president.", image: "https://www.peta.org/wp-content/uploads/2013/10/Twitter.jpeg")
+org2 = Organization.create(name: "Big Cat Rescue", website: "https://bigcatrescue.org/", description: "Big Cat Rescue, one of the world’s largest accredited sanctuaries for exotic cats, is a leading advocate for ending the abuse of captive big cats and saving wild cats from extinction.  We are the most hated, feared and lied about by circuses, backyard breeders, roadside zoos, cub petting pimps apseudo-sanctuariesies because we are the most effective at ending the abuse of big cats", image: "https://i.ytimg.com/vi/7jSaPl4Q9uc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCL4En2S7uxic_JCPIqx1kCSblDkQ")
+org3 = Organization.create(name: "World Wide Fund for Nature", website: "https://www.worldwildlife.org/", description: "The World Wide Fund for Nature is an international non-governmental organization founded in 1961, working in the field of wilderness preservation, and the reduction of human impact on the environment. It was formerly named the World Wildlife Fund, which remains its official name in Canada and the United States.", image: "https://fundraising.co.uk/wp-content/uploads/2019/12/pasted-image-0-1-copy-e1575529107115.png")
+
