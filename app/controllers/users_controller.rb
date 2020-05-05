@@ -7,8 +7,16 @@ class UsersController < ApplicationController
 
     def show   
         user = User.find(params[:id])
+        # user_followers = user.followers.map{|fo| User.find(fo.follow_id)}
+        # user_follows = user.followed.map{|fo| User.find(fo.follower_id)}
+       
         render json: user.as_json(:include => [:posts, :followed, :followers] )
-    end 
+    end
+
+    def people
+        render json: User.all.as_json
+    end
+
     
     def create
         user = User.create(user_params)
@@ -21,6 +29,7 @@ class UsersController < ApplicationController
         render json: user 
     end 
 
+    
 
 
     private

@@ -67,3 +67,32 @@ org1 = Organization.create(name: "People for the Ethical Treatment of Animals", 
 org2 = Organization.create(name: "Big Cat Rescue", website: "https://bigcatrescue.org/", description: "Big Cat Rescue, one of the world’s largest accredited sanctuaries for exotic cats, is a leading advocate for ending the abuse of captive big cats and saving wild cats from extinction.  We are the most hated, feared and lied about by circuses, backyard breeders, roadside zoos, cub petting pimps apseudo-sanctuariesies because we are the most effective at ending the abuse of big cats", image: "https://i.ytimg.com/vi/7jSaPl4Q9uc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCL4En2S7uxic_JCPIqx1kCSblDkQ")
 org3 = Organization.create(name: "World Wide Fund for Nature", website: "https://www.worldwildlife.org/", description: "The World Wide Fund for Nature is an international non-governmental organization founded in 1961, working in the field of wilderness preservation, and the reduction of human impact on the environment. It was formerly named the World Wildlife Fund, which remains its official name in Canada and the United States.", image: "https://fundraising.co.uk/wp-content/uploads/2019/12/pasted-image-0-1-copy-e1575529107115.png")
 
+#likes for posts 
+#post1
+like1 = Like.create(post_id: post1.id, user_id: user1.id)
+like2 = Like.create(post_id: post1.id, user_id: user2.id)
+like3 = Like.create(post_id: post1.id, user_id: user3.id)
+#post2
+like4 = Like.create(post_id: post2.id, user_id: user5.id)
+like5 = Like.create(post_id: post2.id, user_id: user6.id)
+#post3
+like6 = Like.create(post_id: post3.id, user_id: user4.id)
+like7 = Like.create(post_id: post3.id, user_id: user5.id)
+#post4
+like8 = Like.create(post_id: post4.id, user_id: user4.id)
+like9 = Like.create(post_id: post4.id, user_id: user2.id)
+like10 = Like.create(post_id: post4.id, user_id: user1.id)
+#post5-9
+like11 = Like.create(post_id: post5.id, user_id: user4.id)
+like12 = Like.create(post_id: post6.id, user_id: user2.id)
+like13 = Like.create(post_id: post7.id, user_id: user5.id)
+like14 = Like.create(post_id: post8.id, user_id: user6.id)
+like15 = Like.create(post_id: post9.id, user_id: user1.id)
+#post10
+like16 = Like.create(post_id: post10.id, user_id: user2.id)
+like17 = Like.create(post_id: post10.id, user_id: user5.id)
+like18 = Like.create(post_id: post10.id, user_id: user6.id)
+#post11
+like19 = Like.create(post_id: post11.id, user_id: user1.id)
+like20 = Like.create(post_id: post11.id, user_id: user3.id)
+like21 = Like.create(post_id: post11.id, user_id: user4.id)

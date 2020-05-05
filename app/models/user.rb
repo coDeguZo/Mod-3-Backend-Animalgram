@@ -1,6 +1,8 @@
 class User < ApplicationRecord
     has_many :posts, dependent: :destroy
     has_many :comments, through: :posts
+    has_many :likes
+
 
     has_many :followed, :class_name => 'Friend', 
         :foreign_key => 'follow_id'

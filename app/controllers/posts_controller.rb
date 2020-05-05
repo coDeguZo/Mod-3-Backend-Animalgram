@@ -1,12 +1,12 @@
 class PostsController < ApplicationController
 
         def index
-            render json: Post.all.as_json(:include => [:comments, :user])
+            render json: Post.all.as_json(:include => [:comments, :user, :likes])
         end 
 
         def show
             post = Post.find_by(id: params[:id])
-            render json: post, include: [:comments]
+            render json: post, include: [:comments, :user, :likes]
         end
 
         def create
