@@ -17,6 +17,9 @@ user3 = User.create(username: "carolbaskin", fullname:"Carol Baskin", bio: "I lo
 user4 = User.create(username: "joeexotic", fullname:"Joe Exotic", bio:"I love cats and hate Carole Baskin.")
 user5 = User.create(username: "danny2thumbs", fullname: "Danny Succar", bio: "Free Joe Exotic!")
 user6 = User.create(username: "BretHitmanHart", fullname: "Bret Gibson", bio: "I'm a sharpshooter")
+user7 = User.create(username: "sebassy", fullname: "Sebastien Dornel", bio: "Delete the Spec")
+user8 = User.create(username: "chine", fullname: "Chine Anikwe", bio: "Flannels!")
+user9 = User.create(username: "junior", fullname: "Ras Dinho", bio: "I love Flatiron")
 
 # richard is following dawit
 friend1 = Friend.create(follower_id: user1.id, follow_id: user2.id) 
@@ -27,12 +30,17 @@ friend3 = Friend.create(follower_id: user3.id, follow_id: user4.id)
 # carol baskin is following Danny
 friend4 = Friend.create(follower_id: user3.id, follow_id: user5.id)
 
+friend5 = Friend.create(follower_id: user4.id, follow_id: user3.id)
 
+friend6 = Friend.create(follower_id: user5.id, follow_id: user4.id)
 
+friend7 = Friend.create(follower_id: user7.id, follow_id: user6.id)
+
+friend8 = Friend.create(follower_id: user6.id, follow_id: user7.id)
 
 
 # Can come back later to change post text.
-post1 = Post.create(user_id: user1.id, location: "Washington D.C", post_text: "This dog is so adorable!!", graphic_url: "https://i.insider.com/5df126b679d7570ad2044f3e?width=1100&format=jpeg") 
+post1 = Post.create(user_id: user1.id, location: "Washington DC", post_text: "This dog is so adorable!!", graphic_url: "https://i.insider.com/5df126b679d7570ad2044f3e?width=1100&format=jpeg") 
 post2 = Post.create(user_id: user2.id, location: "Las Vegas, NV", post_text: "Cat Swag!", graphic_url: "https://i.imgur.com/qI9wxm5.jpg")
 post3 = Post.create(user_id: user2.id, location: "Miami, FL", post_text: "I can't wait to see this animal at the zoo next week!!", graphic_url: "https://www.indianapoliszoo.com/wp-content/uploads/2018/04/CROPPED_Elephant_Tombi-Fred_Cateresizedresized.jpg")
 post4 = Post.create(user_id: user2.id, location: "San Diago, CA", post_text: "My heart melts with lovee seeing these pigs :)", graphic_url: "https://images.newscientist.com/wp-content/uploads/2020/01/29095610/gettyimages-1146002928.jpg")
@@ -43,6 +51,16 @@ post8 = Post.create(user_id: user4.id, location: "Toronto", post_text: "Why can'
 post9 = Post.create(user_id: user6.id, location: "Houston, TX", post_text: "Saw these in the wild yesterday lol", graphic_url: "https://cdn.britannica.com/16/93516-050-3FB4ABE4/Cape-porcupine.jpg")
 post10 = Post.create(user_id: user3.id, location: "Beijing, China", post_text: "I looooooove Pandasssss", graphic_url: "https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/5465887/6a010535647bf3970b017ee997dd63970d-500wi.jpg")
 post11 = Post.create(user_id: user4.id, location: "Santa Monica, CA", post_text: "Wow saw this in the ocean OMG", graphic_url: "https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/5465887/6a010535647bf3970b017ee997dd63970d-500wi.jpg")
+post12 = Post.create(user_id: user3.id, location: "Orlando, FL", post_text: "I don't watch news on television, unless there's a cat involved.", graphic_url: "https://filmdaily.co/wp-content/uploads/2020/04/tiger-king-quotes-1-Carole-Baskin.jpg")
+post13 = Post.create(user_id: user4.id, location: "Garden City, KA", post_text: "People don't come to see the tigers; they come to see me.", graphic_url: "https://filmdaily.co/wp-content/uploads/2020/04/2-more-joe.jpg")
+post14 = Post.create(user_id: user1.id, location: "Washington, DC", post_text: "Wow that a big giraffe!!!!", graphic_url: "https://upload.wikimedia.org/wikipedia/commons/c/c7/Rothschild%27s_Giraffe_%28Giraffa_camelopardalis_rothschildi%29_male_%287068054987%29%2C_crop_%26_edit.jpg")
+post15 = Post.create(user_id: user7.id, location: "Baltimore, MD", post_text: "Got to see the penguin show today!!", graphic_url: "https://scx2.b-cdn.net/gfx/news/2020/usuallythepe.jpg")
+post16 = Post.create(user_id: user7.id, location: "Baltimore, MD", post_text: "I can't believe that we actually got to see the Lion!!", graphic_url: "https://s.abcnews.com/images/US/razi-lion-ht-jpo-190710_hpMain_16x9_992.jpg")
+post17 = Post.create(user_id: user1.id, location: "Rockville, MD", post_text: "I saw this beautiful bird flying around last week.", graphic_url: "https://onanimation.files.wordpress.com/2016/12/cute-little-bird-flying-hd-wallpaper.jpg")
+post18 = Post.create(user_id: user1.id, location: "Denver, CO", post_text: "Didn't even know these were still alive!", graphic_url: "https://www.tetonscience.org/wp-content/uploads/2019/07/Screen-Shot-2019-07-18-at-10.48.10-AM.png")
+post19 = Post.create(user_id: user1.id, location: "Washington, DC", post_text: "This is the best day Ever!  Finally got to see my favorite aquatic animal!!!", graphic_url: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/08/19/14/dolphin.jpg")
+post20 = Post.create(user_id: user1.id, location: "Los Angeles, CA", post_text: "Nothing like a nice walk on the beach!!!!", graphic_url: "https://www.humanesociety.org/sites/default/files/styles/768x326/public/2018/09/sea-turtle-430287.jpg")
+
 
 
 #creat comment seeds, may need to update post IDs to make comments relevant
