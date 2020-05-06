@@ -33,16 +33,16 @@ friend4 = Friend.create(follower_id: user3.id, follow_id: user5.id)
 
 # Can come back later to change post text.
 post1 = Post.create(user_id: user1.id, location: "Washington D.C", post_text: "This dog is so adorable!!", graphic_url: "https://i.insider.com/5df126b679d7570ad2044f3e?width=1100&format=jpeg") 
-post2 = Post.create(user_id: user2.id, location: "Las Vegas", post_text: "Cat Swag!", graphic_url: "https://i.imgur.com/qI9wxm5.jpg")
-post3 = Post.create(user_id: user2.id, location: "Miami", post_text: "I can't wait to see this animal at the zoo next week!!", graphic_url: "https://www.indianapoliszoo.com/wp-content/uploads/2018/04/CROPPED_Elephant_Tombi-Fred_Cateresizedresized.jpg")
-post4 = Post.create(user_id: user2.id, location: "San Diago", post_text: "My heart melts with lovee seeing these pigs :)", graphic_url: "https://images.newscientist.com/wp-content/uploads/2020/01/29095610/gettyimages-1146002928.jpg")
+post2 = Post.create(user_id: user2.id, location: "Las Vegas, NV", post_text: "Cat Swag!", graphic_url: "https://i.imgur.com/qI9wxm5.jpg")
+post3 = Post.create(user_id: user2.id, location: "Miami, FL", post_text: "I can't wait to see this animal at the zoo next week!!", graphic_url: "https://www.indianapoliszoo.com/wp-content/uploads/2018/04/CROPPED_Elephant_Tombi-Fred_Cateresizedresized.jpg")
+post4 = Post.create(user_id: user2.id, location: "San Diago, CA", post_text: "My heart melts with lovee seeing these pigs :)", graphic_url: "https://images.newscientist.com/wp-content/uploads/2020/01/29095610/gettyimages-1146002928.jpg")
 post5 = Post.create(user_id: user5.id, location: "Congo DRC", post_text: "I can't believe I haven't seen this bird yet", graphic_url: "https://images.pexels.com/photos/326900/pexels-photo-326900.jpeg")
 post6 = Post.create(user_id: user5.id, location: "North Korea", post_text: "I love my dog <3 <3", graphic_url: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/golden-retriever-dog-royalty-free-image-505534037-1565105327.jpg")
-post7= Post.create(user_id: user3.id, location: "Tokyo", post_text: "I can't wait to adopt this dog!", graphic_url: "https://images.wagwalkingweb.com/media/breed/pug-zu/hero/Pug-Zu.jpg")
+post7= Post.create(user_id: user3.id, location: "Tokyo, Japan", post_text: "I can't wait to adopt this dog!", graphic_url: "https://images.wagwalkingweb.com/media/breed/pug-zu/hero/Pug-Zu.jpg")
 post8 = Post.create(user_id: user4.id, location: "Toronto", post_text: "Why can't it be summer!  So want to ride a horse", graphic_url: "https://ichef.bbci.co.uk/news/1024/cpsprodpb/1245A/production/_103224847_horsea.png")
-post9 = Post.create(user_id: user6.id, location: "Houston", post_text: "Saw these in the wild yesterday lol", graphic_url: "https://cdn.britannica.com/16/93516-050-3FB4ABE4/Cape-porcupine.jpg")
-post10 = Post.create(user_id: user3.id, location: "Beijing", post_text: "I looooooove Pandasssss", graphic_url: "https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/5465887/6a010535647bf3970b017ee997dd63970d-500wi.jpg")
-post11 = Post.create(user_id: user4.id, location: "Santa Monica", post_text: "Wow saw this in the ocean OMG", graphic_url: "https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/5465887/6a010535647bf3970b017ee997dd63970d-500wi.jpg")
+post9 = Post.create(user_id: user6.id, location: "Houston, TX", post_text: "Saw these in the wild yesterday lol", graphic_url: "https://cdn.britannica.com/16/93516-050-3FB4ABE4/Cape-porcupine.jpg")
+post10 = Post.create(user_id: user3.id, location: "Beijing, China", post_text: "I looooooove Pandasssss", graphic_url: "https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/5465887/6a010535647bf3970b017ee997dd63970d-500wi.jpg")
+post11 = Post.create(user_id: user4.id, location: "Santa Monica, CA", post_text: "Wow saw this in the ocean OMG", graphic_url: "https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/5465887/6a010535647bf3970b017ee997dd63970d-500wi.jpg")
 
 
 #creat comment seeds, may need to update post IDs to make comments relevant
